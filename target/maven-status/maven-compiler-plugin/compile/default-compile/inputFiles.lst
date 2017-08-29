@@ -1,0 +1,5 @@
+/home/mauricio/Documentos/taskNovo/src/main/java/net/mdantas/task/daos/TaskDao.java
+/home/mauricio/Documentos/taskNovo/src/main/java/net/mdantas/task/models/Task.java
+/home/mauricio/Documentos/taskNovo/src/main/java/net/mdantas/task/models/Estado.java
+/home/mauricio/Documentos/taskNovo/src/main/java/net/mdantas/task/controllers/TaskController.java
+/home/mauricio/Documentos/taskNovo/src/main/java/net/mdantas/task/infra/EntityManagerProducer.java
