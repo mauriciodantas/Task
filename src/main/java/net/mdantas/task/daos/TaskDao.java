@@ -20,7 +20,9 @@ public class TaskDao
 
    public void save(Task task)
    {
+	  manager.getTransaction().begin();
       manager.persist(task);
+      manager.getTransaction().commit();
    }
 
    public Task findById(Integer id)
@@ -29,13 +31,17 @@ public class TaskDao
    }
 
    public void remove(Task task)
-   {
+   {  manager.getTransaction().begin();
       manager.remove(task);
+      manager.getTransaction().commit();;
    }
 
    public void update(Task task)
    {
+	  manager.getTransaction().begin();
       manager.merge(task);
+      manager.getTransaction().commit();
+      
    }
 
 }

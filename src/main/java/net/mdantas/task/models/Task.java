@@ -11,6 +11,12 @@ import javax.persistence.Id;
 
 @Entity
 public class Task {
+	
+	public Task() {
+		this.dataCriacao = new Date();
+		this.estado = Estado.EM_ANDAMENTO;
+	}
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,6 +57,9 @@ public class Task {
 	}
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
+	}
+	public boolean isEmAndamento(){
+		return estado.equals(Estado.EM_ANDAMENTO);
 	}
 	
 

@@ -3,13 +3,24 @@ package net.mdantas.task.models;
 public enum Estado {
 
 	EM_ANDAMENTO("Em andamento"),
-	CONCLUIDA("Concluida"),
+	CONCLUIDA("Concluída"),
 	REMOVIDA("Removida");
 	
-	public String descricaoEstado;
+	private String descricao;
 
-	Estado(String descricaoEstado){
-		this.descricaoEstado = descricaoEstado;
+	Estado(String descricao){
+		this.descricao = descricao;
 	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	
+	
 	
 }
